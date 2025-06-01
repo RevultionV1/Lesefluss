@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Book Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #1f1f2e, #4b0082);
+      color: white;
+    }
+    header {
+      background: #2c2c3a;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #d3bdf0;
+    }
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(135deg, #4b0082, #2c2c3a);
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #d3d3d3;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .product {
+      background: #2c2c3a;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+    }
+    .product h3 {
+      color: #d3bdf0;
+      font-size: 1.3rem;
+    }
+    .product p {
+      font-size: 0.95rem;
+      color: #cccccc;
+    }
+    .product button {
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: linear-gradient(90deg, #6a0dad, #8a2be2);
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    footer {
+      background: #1f1f2e;
+      padding: 2rem;
+      text-align: center;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    .payment-info {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .payment-info img {
+      height: 30px;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LitNest</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">Über uns</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Dein digitales Bücherregal</h2>
+    <p>Entdecke hochwertige E-Books in unserem modernen Onlineshop.</p>
+  </section>
+  <section class="products" id="shop">
+    <div class="product">
+      <h3>„Digitales Mindset“</h3>
+      <p>Ein inspirierender Ratgeber für deinen digitalen Alltag.</p>
+      <button>Kaufen – 9,99 €</button>
+    </div>
+    <div class="product">
+      <h3>„Code & Coffee“</h3>
+      <p>Der perfekte Begleiter für Einsteiger in die Webentwicklung.</p>
+      <button>Kaufen – 12,99 €</button>
+    </div>
+    <div class="product">
+      <h3>„Minimalismus leben“</h3>
+      <p>Weniger Zeug, mehr Zeit – dein Guide zum digitalen Aufräumen.</p>
+      <button>Kaufen – 8,49 €</button>
+    </div>
+  </section>
+  <section class="payment-info">
+    <h3>Bezahlmethoden</h3>
+    <p>Bequem und sicher bezahlen mit:</p>
+    <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/100px-Mastercard_2019_logo.svg.png" alt="Mastercard">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/100px-Visa.svg.png" alt="Visa">
+    <p>Bezahl-Integration z. B. über <strong>Gumroad</strong>, <strong>PayPal Buttons</strong> oder <strong>Stripe</strong>.</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 LitNest – Alle Rechte vorbehalten.</p>
+  </footer>
+</body>
+</html>
